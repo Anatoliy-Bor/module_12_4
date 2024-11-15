@@ -1,0 +1,18 @@
+2024-11-15 17:15:39,035 | WARNING | Неверный тип данных для объекта Runner
+2024-11-15 17:15:39,035 | ERROR | Ошибка 
+Traceback (most recent call last):
+  File "G:\Проэкты питона\Logirovanie\run_test_old.py", line 31, in test_run
+    verification_test = Runner('Ivan', -10)
+                        ^^^^^^^^^^^^^^^^^^^
+  File "G:\Проэкты питона\Logirovanie\runner_for_log.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -10
+2024-11-15 17:15:39,037 | WARNING | Неверная скорость для Runner
+2024-11-15 17:15:39,037 | ERROR | Ошибка
+Traceback (most recent call last):
+  File "G:\Проэкты питона\Logirovanie\run_test_old.py", line 17, in test_walk
+    verification_test = Runner('Tom', -5)
+                        ^^^^^^^^^^^^^^^^^
+  File "G:\Проэкты питона\Logirovanie\runner_for_log.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
